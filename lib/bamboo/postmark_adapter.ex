@@ -109,7 +109,7 @@ defmodule Bamboo.PostmarkAdapter do
     params
     |> Map.put(:"TemplateId", template_name)
     |> Map.put(:"TemplateModel", template_model)
-    |> Map.put(:"InlineCss", true)
+    |> Map.put(:"InlineCss", false)
   end
 
   defp maybe_put_template_params(params, _) do
